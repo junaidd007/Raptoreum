@@ -14,7 +14,7 @@
   "threads": 0,
 
   "_comment4": "tune-full takes longer but should provide better hashrate",
-  "tune-full": false,
+  "tune-full": true,
 
   "_comment5": "You can specify different name/location for your tune config",
   "tune-config": "tune_config",
